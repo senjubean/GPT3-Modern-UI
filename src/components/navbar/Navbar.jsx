@@ -30,7 +30,9 @@ const Navbar = () => {
             <p>Sign in</p>
             <button type='button'> Sign up</button>
         </div>
+    {/* the below section is for smaller screen devices */}
         <div className="gpt3__navbar-menu">
+            {/* interactive hamburger menu icon */}
             {toggleMenu
             ? <RiCloseLine color='#fff' size={27} onClick={()=> setToggleMenu(false)} />
             : <RiMenu3Line color='#fff' size={27} onClick={()=> setToggleMenu(true)} />    
@@ -40,6 +42,7 @@ const Navbar = () => {
                     <div className="gpt3__navbar-menu_container scale-up-center">
                         <div className="gpt3__navbar-menu_container-links">
                             <Menu />
+                           
                             <div className="gpt3__navbar-menu_container-links-sign">
                                 <p>Sign in</p>
                                 <button type='button'> Sign up</button>
